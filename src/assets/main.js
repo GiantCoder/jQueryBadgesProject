@@ -7,11 +7,11 @@ $(function() {
      }
    });
 
-const displayCourses = function (data) {
-
-  const badges = $('#badges');
+function displayCourses(data) {
+  var badges = $('#badges');
 
   data.forEach(function (course) {
+
     let $course = $('<div />', {
       'class': 'course',
     }).appendTo(badges);
